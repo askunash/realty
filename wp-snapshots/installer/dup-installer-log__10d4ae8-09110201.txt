@@ -1,0 +1,176 @@
+********************************************************************************
+* DUPLICATOR-LITE: Install-Log
+* STEP-1 START @ 11:57:29
+* VERSION: 1.3.2
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PHP:		5.6.32-1~dotdeb+zts+7.1 | SAPI: apache2handler
+PHP MEMORY:	5000M | SUHOSIN: disabled
+SERVER:		Apache/2.2.22 (Debian)
+DOC ROOT:	/var/www/realty.texxpert.ru
+DOC ROOT 755:	false
+LOG FILE 644:	false
+REQUEST URL:	http://realty.texxpert.ru/dup-installer/main.installer.php
+SAFE MODE :	0
+CONFIG MODE :	NEW
+--------------------------------------
+PRE-EXTRACT-CHECKS
+--------------------------------------
+- PASS:  '.htaccess' not found - no backup needed.
+- PASS:  'web.config' not found - no backup needed.
+- PASS:  '.user.ini' not found - no backup needed.
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME:	20190109_nedvizhimost_10d4ae80ab15bc8f3142_20190109110201_archive.zip
+SIZE:	24.34MB
+
+ZIP:	Shell Exec Unzip
+>>> Starting Shell-Exec Unzip:
+Command: unzip -o -qq '/var/www/realty.texxpert.ru/20190109_nedvizhimost_10d4ae80ab15bc8f3142_20190109110201_archive.zip' -d '/var/www/realty.texxpert.ru' 2>&1
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+Permissions setting on directory '/var/www/realty.texxpert.ru/logs/..' failed
+Permissions setting on file '/var/www/realty.texxpert.ru/20190109_nedvizhimost_10d4ae80ab15bc8f3142_20190109110201_archive.zip' failed
+Permissions setting on directory '/var/www/realty.texxpert.ru/wp-includes/..' failed
+Permissions setting on directory '/var/www/realty.texxpert.ru/.' failed
+Permissions setting on directory '/var/www/realty.texxpert.ru/wp-admin/..' failed
+Permissions setting on file '/var/www/realty.texxpert.ru/installer.php' failed
+Permissions setting on directory '/var/www/realty.texxpert.ru/dup-installer/..' failed
+Permissions setting on directory '/var/www/realty.texxpert.ru/wp-content/..' failed
+
+STEP-1 COMPLETE @ 11:57:31 - RUNTIME: 2.1634 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 11:58:03
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.5.40 -- Build Server: 5.5.58
+FILE SIZE:	dup-database__10d4ae8-09110201.sql (588.78KB) - installer-data.sql (0B)
+TIMEOUT:	5000
+MAXPACK:	16777216
+SQLMODE:	NOT_SET
+NEW SQL FILE:	[/var/www/realty.texxpert.ru/dup-installer/dup-installer-data__10d4ae8-09110201.sql]
+COLLATE FB:	Off
+
+NOTICE: This servers version [5.5.40] is less than the build version [5.5.58].  
+If you find issues after testing your site please referr to this FAQ item.
+https://snapcreek.com/duplicator/docs/faqs-tech/#faq-installer-260-q
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+**ERROR** database error write 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysqldump: Couldn't execute 'SHOW FUNCTION STATUS WHERE Db = 'wptest'': Cannot l' at line 1' - [sql=mysqldump: Couldn't execute 'SHOW FUNCTION STATUS WHERE Db = 'wptest'': Can...]
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	1
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	119
+
+wp_commentmeta: (0)
+wp_comments: (1)
+wp_duplicator_packages: (0)
+wp_links: (0)
+wp_options: (127)
+wp_postmeta: (207)
+wp_posts: (45)
+wp_term_relationships: (12)
+wp_term_taxonomy: (3)
+wp_termmeta: (0)
+wp_terms: (3)
+wp_usermeta: (34)
+wp_users: (2)
+Removed '24' cache/transient rows
+
+INSERT DATA RUNTIME: 0.0945 sec.
+STEP-2 COMPLETE @ 11:58:03 - RUNTIME: 0.0986 sec.
+
+
+
+********************************************************************************
+DUPLICATOR-LITE INSTALL-LOG
+STEP-3 START @ 11:58:09
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_commentmeta^ (0)
+wp_comments~ (1)
+wp_duplicator_packages^ (0)
+wp_links^ (0)
+wp_options~ (127)
+wp_postmeta~ (207)
+wp_posts~ (45)
+wp_term_relationships~ (12)
+wp_term_taxonomy~ (3)
+wp_termmeta^ (0)
+wp_terms~ (3)
+wp_usermeta~ (34)
+wp_users~ (2)
+--------------------------------------
+Search1:	'/var/www/html/wptest' 
+Change1:	'/var/www/realty.texxpert.ru' 
+Search2:	'\/var\/www\/html\/wptest' 
+Change2:	'\/var\/www\/realty.texxpert.ru' 
+Search3:	'%2Fvar%2Fwww%2Fhtml%2Fwptest%2F' 
+Change3:	'%2Fvar%2Fwww%2Frealty.texxpert.ru%2F' 
+Search4:	'\var\www\html\wptest' 
+Change4:	'/var/www/realty.texxpert.ru' 
+Search5:	'\\var\\www\\html\\wptest' 
+Change5:	'\/var\/www\/realty.texxpert.ru' 
+Search6:	'%5Cvar%5Cwww%5Chtml%5Cwptest' 
+Change6:	'%2Fvar%2Fwww%2Frealty.texxpert.ru' 
+Search7:	'//www.wptest.loc' 
+Change7:	'//realty.texxpert.ru' 
+Search8:	'\/\/www.wptest.loc' 
+Change8:	'\/\/realty.texxpert.ru' 
+Search9:	'%2F%2Fwww.wptest.loc' 
+Change9:	'%2F%2Frealty.texxpert.ru' 
+Search10:	'https://realty.texxpert.ru' 
+Change10:	'http://realty.texxpert.ru' 
+Search11:	'https:\/\/realty.texxpert.ru' 
+Change11:	'http:\/\/realty.texxpert.ru' 
+Search12:	'https%3A%2F%2Frealty.texxpert.ru' 
+Change12:	'http%3A%2F%2Frealty.texxpert.ru' 
+SCANNED:	Tables:13 	|	 Rows:434 	|	 Cells:2608 
+UPDATED:	Tables:1 	|	 Rows:47 	|	 Cells:49 
+ERRORS:		0 
+RUNTIME:	0.049200 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG ARK FILE:
+ - '/var/www/realty.texxpert.ru/wp-config.php'
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache 'htaccess.orig' was removed
+
+====================================
+NOTICES
+====================================
+
+No General Notices Found
+
+
+STEP-3 COMPLETE @ 11:58:09 - RUNTIME: 0.0690 sec. 
+
+
